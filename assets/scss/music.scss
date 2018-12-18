@@ -1,0 +1,486 @@
+.index{
+	table{
+		width: 50%;
+		tr{
+			border-bottom: 1px dotted grey;
+			th{
+				font-size: 0.8em;
+				text-align: center;
+			}
+			td{
+				max-width: 40%;
+				padding: 1% 1% 1% 0;
+			}
+		}
+		td:nth-child(2), td:nth-child(3){
+			background: Lavender;
+			text-align: center;
+		}
+	}
+	.top{
+		padding: 0 0 1% 0;
+		text-align: center;
+		border-bottom: 1px solid Silver;
+		h2{
+			margin: 1% 0 1% 0;
+			padding: 2% 0;
+			background: darkred;
+			font-family: 'Saira';
+			font-size: 1.5em;
+			color: GhostWhite;
+		}
+		.tracklistFont{
+			font-size: 1.1em;
+			span{
+				padding: 1% 0;
+				background: GhostWhite;
+				i{
+					margin: 0 1%;
+				}
+			}
+		}
+	}
+	.albumsh2{
+		margin: 1% 0 1% 0;
+		padding: 0;
+		text-align: center;
+		h2{
+			padding: 0;
+			background: darkred;
+			color: GhostWhite;
+			font-family: 'Alegreya Sans SC';
+			font-size: 2.4em;
+		}
+	}
+	.albumsContainer{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		.albums{
+			min-height: 40vh;
+			.single{
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				height: 80%;
+				text-align: center;
+				margin: 0 2%;
+				padding-bottom: 2%;
+				img{
+					margin: 0 auto;
+					min-width: 100%;
+					max-width: 100%;
+					min-height: 75%;
+					max-height: 75%;
+				}
+				h3{
+					clear: both;
+					font-size: 1em;
+					margin: 0;
+					margin-top: 2%;
+				}			
+			}
+		}
+		.single:hover{
+			opacity: 0.9;
+		}
+	}
+	.search{
+		margin-bottom: 0;
+		background: lightgrey;
+		text-align: center;
+		font-size: 1.2em;
+		h2{
+			font-size: 2em;
+		}
+		h3{
+			font-size: 2.4em;
+			letter-spacing: 2px;
+		}
+		form{
+			input{
+				text-align: center;
+			}
+			span{
+				font-size: 0.7em;
+				text-decoration: underline;
+			}
+		}
+		.submit{
+			font-size: 0.8em;
+			margin: 1% 0;
+		}
+	}
+	.artists_search{
+		margin-top: 1%;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		input{
+			display: block;
+			margin: 0 2% 2% 0;
+			color: black;
+			background: lightblue;
+			border: none;
+		}
+		input:hover{
+			opacity: 0.8;
+			color: white;
+			background: red;
+		}
+	}
+}
+.artist{
+	display: flex;
+	flex-flow: column;
+	.mainInfo{
+		overflow: auto;
+		h2{
+			margin-top: 1%;
+			font-size: 2.2em;
+			color: red;
+		}
+		img{
+			width: 30%;
+			height: 30%;
+			margin: 1% 0;
+		}
+		p{
+			clear: both;
+			width: 90%;
+			font-size: 1.1em;
+		}
+	}
+	h3{
+		margin: 1% 0;
+		font-size: 2em !important;
+	}
+	h4{
+		font-size: 1.4em;
+		span{
+			color: red;
+			margin: 0 2%;
+		}
+	}
+	.popularSongs{
+		margin-bottom: 1%;
+		i{
+			margin: 0 2%;
+		}
+		a{
+			font-size: 1.3em;
+			padding-bottom: 4%;
+		}
+	}
+}
+.album{
+	display: flex;
+	padding: 0 1% 0 2%;
+	.mainInfo{
+		overflow: auto;
+		margin-bottom: 1%;
+		h2{
+			margin: 2% 0 0 0;
+			font-size: 2.2em;
+			color: red;
+		}
+		h3{
+			margin: 0 0 1% 0;
+		}
+		img{
+			min-width: 40%;
+			max-width: 40%;
+			min-height: 80%;
+			max-height: 80%;
+			margin: 0 1% 1% 0;
+			float: left;
+		}
+		p{
+			float: left;
+			font-size: 1.2em;
+			width: 50%;
+			margin-bottom: 1%;
+		}
+		small{
+			clear: both;
+			float: left;
+		}
+	}
+	.fileInfo{
+		margin: 0;
+		p{
+			margin-bottom: 1%;
+		}
+	}
+	.tracklist{
+		color: WhiteSmoke;
+		h4{
+			background: LightSlateGray ;
+			font-size: 1.6em;
+			padding: 1% 0 1% 1%;
+			margin: 0;
+			border-top: 1px solid black;
+		}
+		.audio{
+			width: 100%;
+			margin-bottom: 1%;
+		}
+	}
+}
+.song{
+	padding-left: 2%;
+	padding-bottom: 2%;
+	h2{
+		margin-left: 0;
+		color: blue;
+	}
+	h3{
+		margin-top: -10px;
+	}
+	span{
+		display: block;
+		width: 30%;
+		background: black;
+		color: white;
+		padding: 1%;
+		margin: 2% 2% 2% 1%;
+		text-align: center;
+	}
+	audio{
+		width: 45%;
+	}
+	form{
+		margin-bottom: 1%;	
+	}
+	small{
+		clear: both;
+		float: left;
+		font-size: 1em;
+	}
+	.YouTube{
+		clear: both;
+		float: left;
+		margin-top: 1%;
+		width: 50%;
+	}
+}
+@media screen and (max-width: 993px){
+	.index{
+		table{
+			width: 80%;
+		}
+		.top{
+			h2{
+				font-size: 1.2em;
+			}
+			.tracklistFont{
+				font-size: 1em;
+			}
+		}
+		.albums{
+			font-size: 0.9em;
+			min-height: 40vh;
+			img{
+				min-height: 70% !important;
+				max-height: 70% !important;
+			}
+		}
+		.albumsh2{
+			h2{
+				font-size: 2.1em;
+			}
+		}
+		.search{
+			h2{
+				font-size: 1.8em;
+			}
+		}
+	}
+	.artist{
+		.mainInfo{
+			p{
+				width: 95%;
+				font-size: 1em;
+			}
+		}
+	}
+	.search{
+		font-size: 1.2em !important;
+		h3{
+			font-size: 1.8em !important;
+		}
+	}
+	.song{
+		h2{
+			font-size: 1.6em;
+		}
+		h3{
+			font-size: 1.2em;
+		}
+		audio{
+			width: 65%;
+		}
+		small{
+			font-size: 0.8em;
+		}
+		.YouTube{
+			width: 60%;
+		}
+	}
+	.album{
+		.mainInfo{
+			img{
+				min-width: 50%;
+				max-width: 50%;
+				min-height: 100%;
+				max-height: 100%;
+			}
+			h2{
+				font-size: 1.8em;
+			}
+			h3{
+				font-size: 1.6em;
+			}
+			p{
+				clear: both;
+				float: left;
+				width: 100%;
+				font-size: 1em;
+			}
+		}
+		.tracklisth3 h3{
+			text-align: center;
+			font-size: 1.8em;
+			margin-bottom: 2%;
+			letter-spacing: 1px;
+		}
+		.tracklist{
+			h4{
+				font-size: 1.4em;
+				padding: 1% 0 1% 1%;
+				margin: 0;
+				border-top: 1px solid black;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	.index{	
+		table{
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+	.artist{
+		.mainInfo{
+			h2:nth-child(2){
+				margin-bottom: 2%;
+				font-size: 2.1em;
+			}
+			p{
+				font-size: 0.9em;
+			}
+			img{
+				width: 60% !important;
+				height: 60% !important;	
+			}
+		}
+	}
+	.song{
+		audio{
+			width: 75%;
+		}
+		.YouTube{
+			width: 70%;
+		}
+	}
+	.album{
+		.mainInfo{
+			img{
+				float: none;
+				display: block;
+				margin: 0 auto;
+				min-width: 90%;
+				max-width: 90%;
+				min-height: 90%;
+				max-height: 90%;
+			}
+		}
+		.tracklisth3 h3{
+			text-align: center;
+			font-size: 1.8em;
+			margin-bottom: 2%;
+			letter-spacing: 1px;
+		}
+		.tracklist{
+			h4{
+				font-size: 1.4em;
+				padding: 1% 0 1% 1%;
+				margin: 0;
+				border-top: 1px solid black;
+			}
+		}
+	}
+}
+@media screen and (max-width: 576px){
+	.index{
+		.albums{
+			padding: 4% 0 0 0;
+			.single{
+				width: 100%;
+				img{
+					display: block;
+					margin: 0 auto;
+					min-width: 60% !important;
+					max-width: 60% !important;
+					min-height: 100% !important;
+					max-height: 100% !important;
+				}
+			}
+		}
+	}
+	.artist{
+		.mainInfo{
+			text-align: center;
+			h2{
+				font-size: 2.1em;	
+			}
+			img{
+				display: block;
+				margin: 0 auto;
+				width: 60% !important;
+				height: 60% !important;;
+			}
+		}
+	}
+	.song{
+		audio{
+			width: 80%;
+		}
+		.YouTube{
+			width: 80%;
+		}	
+	}
+}
+@media screen and (max-width: 480px){
+	.artist{
+		.mainInfo{
+			p{
+				font-size: 0.8em;
+			}
+			img{
+				width: 75% !important;
+				height: 75% !important;;
+			}
+		}
+	}
+	.song{
+		audio{
+			width: 100%;
+		}
+		.YouTube{
+			width: 100%;
+		}	
+	}
+}

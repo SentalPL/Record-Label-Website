@@ -1,0 +1,43 @@
+<NotepadPlus>
+    <Project name="MVC Learning">
+        <Folder name="assets">
+            <Folder name="css">
+                <File name="assets\css\bootstrap.css" />
+                <File name="assets\css\style.css" />
+            </Folder>
+        </Folder>
+        <Folder name="classes">
+            <File name="classes\Bootstrap.php" />
+            <File name="classes\Controller.php" />
+            <File name="classes\Model.php" />
+        </Folder>
+        <Folder name="controllers">
+            <File name="controllers\home.php" />
+            <File name="controllers\shares.php" />
+            <File name="controllers\users.php" />
+        </Folder>
+        <Folder name="models">
+            <File name="models\home.php" />
+            <File name="models\share.php" />
+            <File name="models\user.php" />
+        </Folder>
+        <Folder name="views">
+            <Folder name="home">
+                <File name="views\home\index.php" />
+            </Folder>
+            <Folder name="shares">
+                <File name="views\shares\add.php" />
+                <File name="views\shares\index.php" />
+            </Folder>
+            <Folder name="users">
+                <File name="views\users\login.php" />
+                <File name="views\users\register.php" />
+            </Folder>
+            <File name="views\main.php" />
+        </Folder>
+        <File name=".htaccess" />
+        <File name="config.php" />
+        <File name="index.php" />
+        <File name="workspace" />
+    </Project>
+</NotepadPlus>

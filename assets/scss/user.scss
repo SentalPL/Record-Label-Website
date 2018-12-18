@@ -1,0 +1,115 @@
+.user{
+	h2{
+		text-align: left;
+		margin-top: 1%;
+	}	
+	.logout{
+		margin-top: 4%;
+		color: blue;
+	}
+	.notification{
+		color: green;
+		font-size: 1.4em;
+		text-align: center;
+	}
+}
+.panel{
+	width: 100%;
+	h2{
+		text-align: center;
+		font-size: 2.2em;
+		margin-top: 5%;
+		i{
+			font-size: 1.8em;
+		}
+	}
+	a:hover{
+		color: limegreen;
+		text-decoration: none;
+	}
+}
+.project{
+	width: 100%;
+	padding: 0;
+	h2, h3, p, input{
+		clear: both;
+		float: left;
+	}	
+	h3{
+		margin: 0;
+		padding: 0.5% 0;
+	}
+	.nicEdit-main{
+		background: white;
+	}
+	form{
+		width: 100%;
+		display: inline;
+		.title, textarea{
+			width: 50%;
+		}
+		textarea{
+			height: 60%;
+		}
+		.file, .btn{
+			clear: both;
+			float: left;
+			margin-bottom: 1%;
+		}
+	}
+}
+.beats{
+	form{
+		.btn{
+			margin-top: 1%;
+		}
+	}
+	.beat{
+		h4{
+			padding: 1% 0 1% 1%;
+			background: LightSlateGray;
+			color: GhostWhite;
+			span{
+				margin-left: 2%;
+				color: black;
+			}
+		}
+		audio{
+			width: 100%;
+		}
+		form{
+			padding-bottom: 1%;
+			border-bottom: 2px solid DarkSlateGray;
+		}
+	}
+}
+.statistics{
+	h2{
+		text-align: center;
+	}
+	h4{
+		padding-top: 2%;
+		border-top: 1px solid DarkSlateGray;
+	}
+	.search{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 993px){
+	.project{
+		form{
+			.title, texarea{
+				width: 90%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	.project{
+		form{
+			.title, textarea{
+				width: 100%;
+			}
+		}
+	}
+}

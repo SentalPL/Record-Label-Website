@@ -1,0 +1,13 @@
+assets/articles/
+assets/beats/
+assets/css/
+assets/download/
+assets/font/
+assets/img/
+assets/projects/
+
+*.gz
+*.rar
+*.zip
+
+config.php

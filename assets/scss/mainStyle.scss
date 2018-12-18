@@ -1,0 +1,153 @@
+body{
+	margin: 0 100px auto;
+	background: #343434;
+	a:hover{
+		text-decoration: none;
+	}
+	.header .row{
+		position: relative;
+		background: black;
+
+		h1{
+			display: none;
+		}
+		img{
+			display: block;
+			margin: 8% auto 0 auto;
+			min-height: 75%;
+			max-height: 75%;
+		}
+		img:hover{
+			opacity: 0.8;
+		}
+		
+		p{
+			position: absolute;
+			bottom: 28%;
+			left: 0;
+			width: 100%;
+			color: #C50404;
+			text-align: center;
+			font-size: 2.1em;
+			font-family: 'Merienda', cursive;
+		}
+
+		ul{
+			position: absolute;
+			margin-bottom: 1%;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			li{
+				display: inline;
+				color: white;
+				margin-right: 5%;
+			}
+		}
+	}
+	@media screen and (max-width: 1200px){
+		.header .row{
+			p{
+				font-size: 1.9em;
+			}
+		}
+	}
+	@media screen and (max-width: 993px){
+		.header .row{
+			img{
+				
+			}
+			p{
+				font-size: 1.2em;
+			}
+			ul{
+				text-align: left;
+				font-size: 1em;
+				li{
+					margin-right: 2%;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 768px){
+		.header .row{
+			display: flex;
+			flex-flow: column;
+			max-height: 9999px;
+
+			.logo{			
+				img{
+					margin: 4% auto 13% auto;
+					min-height: 25vh;
+					max-height: 25vh;
+				}
+			}
+			p{
+				padding-left: 1%;
+				margin-bottom: 8%;
+			}
+			ul{
+				bottom: 0;
+				margin-bottom: 0;
+				padding-left: 2%;
+				text-align: center;
+			}
+		}
+	}
+	
+	@media screen and (max-width: 576px){
+		.header .row{
+			p{
+				font-size: 1.5em;
+			}
+		}
+	}
+	@media screen and (max-width: 490px){
+		.header .row{
+			p{
+				font-size: 1.4em;
+			}
+		}
+	}
+	@media screen and (max-width: 420px){
+		.header .row{
+			.logo{
+				img{
+					min-height: 22vh;
+					max-height: 22vh;
+					margin-bottom: 18%;
+				}
+			}
+			p{
+				font-size: 1.2em;
+				margin-bottom: 8%;
+			}
+		}
+	}
+	
+	.content{
+		background: #F1F2EB;
+		margin-top: 1%;
+		-moz-border-top-left-radius: 20px;
+		-webkit-border-top-left-radius: 20px;
+		-khtml-border--top-left-radius: 20px;
+		border-top-left-radius: 10px;
+		
+		.p_info{
+			margin: 1% 0 1% 6%;
+			color: green;
+		}
+		.e_info{
+			margin: 1% 0 1% 2%;
+			color: red;
+		}
+	}
+	
+	.footer{
+		margin-top: 1%;
+		background: black;
+		color: white;
+	}
+}
