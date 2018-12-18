@@ -1,14 +1,14 @@
 Short Info:
 
 Public Section: listening & downloading songs and albums
-					 reading news
+		| reading news
 					 
-Admin Section: adding artists, albums, songs, articles, beats
-					 statistics
+Admin Section: adding artists, albums, songs, articles, beats 
+		| statistics
 					 
 User (Artist) Section: creating private projects (beat & lirycs)
-							  searching and rating beats
-							  settings
+		       | searching and rating beats
+		       | settings
 Work time: 6 months
 
 ***
